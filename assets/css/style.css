@@ -52,6 +52,7 @@ body {
     --gray-200: #cccccc;
     --gray-400: #505861;
 
+    --blue-200:#1c41d5;
     --white: #F9F9F9;
 }
 
@@ -75,9 +76,9 @@ h1 {
 h2 {
     padding: 1rem;
     color: var(--black-800);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
 }
 
 h3 {
@@ -93,6 +94,7 @@ p {
     line-height: 1.5rem;
     text-align: justify;
     padding: 0.5rem 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Definindo as configurações do Flexbox */
@@ -110,14 +112,14 @@ p {
 
 /* Estilização da Seção Header */
 #header_content {
-    height: 80px;
+    height: 65px;
     position: sticky;
     top: 0;
     width: 100%;
     justify-content: space-between;
     padding: 24px;
-    background-color: var(--purple-800);
-    border-bottom: 1px solid var(--purple-500);
+    background-color:var(--blue-200);
+    border-bottom: 1px solid black;
 }
 
 #menu li {
@@ -142,6 +144,11 @@ p {
     flex-direction: column;
     margin: 2rem auto;
     width: 90%;
+    background-color: #e7e7e7;
+    padding: 1%;
+    padding-right: 30px;
+    padding-left: 20px;
+    border-radius: 20px;
 }
 
 #conteudo {
@@ -169,7 +176,7 @@ footer {
     margin: 0;
     padding: 2rem;
     color: var(--white);
-    background-color: var(--purple-500);
+    background-color: var(--blue-200);
     font-weight: bold;
     text-align: center;
 }
@@ -181,14 +188,21 @@ footer {
     width: 320px;
 }
 
-.social_icon {
+.linkedin,.github,.instagram {
     width: 4rem;
     height: 4rem;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7457%) hue-rotate(23deg) brightness(95%) contrast(87%);
 }
 
-.social_icon:hover {
+.linkedin:hover{
     filter: brightness(0) saturate(100%) invert(29%) sepia(46%) saturate(4080%) hue-rotate(202deg) brightness(98%) contrast(98%)
+}
+.github:hover{
+    filter: none;
+}
+
+.instagram:hover {
+    filter: brightness(0) saturate(2000%) invert(50%) sepia(60%) saturate(1000%) hue-rotate(-10deg) brightness(100%) contrast(98%);
 }
 
 /*Estilização da Página de Contato*/
@@ -217,10 +231,10 @@ form input,
 textarea {
     margin: 0.5rem 0 1rem;
     padding: 0.5rem;
-    border-radius: 1.25rem;
+    border-radius: 0.25rem;
     border: none;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 textarea {
@@ -261,4 +275,31 @@ form button:hover {
     font-size: 1rem;
     text-align: justify;
     font-weight: 600;
+}
+#formulario{
+            background-color: #ffffff;
+            background-size: cover; /* Faz a imagem cobrir toda a div */
+            background-position: center; /* Centraliza a imagem */
+            background-repeat: no-repeat; /* Impede que a imagem se repita */
+            border: px solid black; /* Apenas para visualizar a div */
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+}
+#nome{
+    border-bottom:1px solid #171717;
+}
+#email{
+    border-bottom:1px solid #171717;
+}
+#subject{
+    border-bottom:1px solid #171717;
+}
+#message{
+    border:1px solid #171717;
+}
+#botao{
+    background-color: #1c41d5;
+}
+#botao:hover{
+    background-color: #001c8e;
 }

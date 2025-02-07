@@ -9,9 +9,10 @@
 	<meta name="keywords" content="HTML, CSS, JavaScript">
 	<title>Lucas</title>
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body >
 		<!-- Cabeçalho da Página (header) -->
 		<header>
 
@@ -35,10 +36,10 @@
 						<!-- Marcadores não ordenados + links -->
 						<ul id="menu">
 							<li>
-								<a href="index.html">Home</a>
+								<a class="home" href="index.html">Home</a>
 							</li>
 							<li>
-								<a href="contato.html">Contato</a>
+								<a class="contato" href="contato.html">Contato</a>
 							</li>
 						</ul>
 
@@ -63,30 +64,14 @@
 			<div id="conteudo" class="flex">
 
 				<!-- Imagem do criador do conteúdo -->
-				<img src="./assets/img/user_01.svg" alt="Foto do criador desse conteudo" style="width: 200px;" class="img_profile">
+				<img src="./assets/img/LucasFormando.jpg" alt="Foto do criador desse conteudo" style="width: 290px; border-radius: 20%;" class="img_profile">
 				<!-- Texto sobre o criador do conteúdo -->
 				<article id="sobre_texto">
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Voluptatem odio possimus, dolorem earum atque
-						itaque quas soluta placeat iure omnis porro cum
-						debitis sequi libero! Deleniti vitae quis hic
-						cumque. Lorem ipsum, dolor sit amet consectetur
-						adipisicing elit. Eius inventore ullam, quia
-						deserunt enim cumque hic officia repudiandae ad ab
-						et sapiente qui vitae accusamus adipisci provident
-						sit assumenda laboriosam!
+						Me chamo Lucas Daniel Souza Dias, tenho 24 anos e sou apaixonado por tecnologia, filmes e RPGs! Também adoro cozinhar – especialmente massas italianas e comidas árabes –, mas confesso que gosto ainda mais de comer! Minha jornada na TI começou na ETEC de Itaquaquecetuba, onde fui surpreendido por um universo gigantesco: Java, C#, PHP, redes, mobile… Foi lá que me apaixonei pela programação! Depois, me formei em Gestão de TI na Fatec, onde desenvolvi projetos desafiadores, incluindo um site completo de gestão financeira no meu TCC. 
 					</p>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Voluptatem odio possimus, dolorem earum atque
-						itaque quas soluta placeat iure omnis porro cum
-						debitis sequi libero! Deleniti vitae quis hic
-						cumque. Lorem ipsum, dolor sit amet consectetur
-						adipisicing elit. Eius inventore ullam, quia
-						deserunt enim cumque hic officia repudiandae ad ab
-						et sapiente qui vitae accusamus adipisci provident
-						sit assumenda laboriosam!
+						Trabalhei como instrutor de informática por dois anos. o que fortaleceu minha comunicação, organização e resiliência. Mas, mesmo dando aulas, nunca abandonei a programação – todo dia, depois do expediente, um commit novo antes de dormir! Atualmente, estou no Java Fullstack da Generation Brasil, me aprofundando em Java, Spring, MySQL e React. Meu objetivo? Me tornar um desenvolvedor júnior e, no futuro, um Tech Lead para impactar pessoas e compartilhar conhecimento! 🚀
 					</p>
 				</article>
 			</div>
@@ -96,13 +81,11 @@
 		<section id="video" class="flex_start">
 
 			<!-- Título da Seção -->
-			<h2>Meu vídeo favorito:</h2>
+			<h2 class="video_favorito">Meu vídeo favorito:</h2>
 
 			<!-- Vídeo da Seção -->
 			<div id="youtube" class="flex">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/Z3_mtwMMuGI?si=F1QiiDYSfsPG3nF0"
-					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/hO_tjm9i32g?si=FFp8tGQaITSBgvU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</div>
 
 		</section>
@@ -115,22 +98,26 @@
 		<!-- Seção de Contato - Redes Sociais-->
 		<section id="redes_sociais">
 
-			<a href="">
-				<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
+			<a href="https://www.linkedin.com/in/lucas-daniel-souza-dias/" target="_blank">
+				<img src="assets/img/linkedin.svg" alt="LinkedIn" class="linkedin"/>
 			</a>
-			<a href="">
-				<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
+			<a href="https://github.com/Lucas300" target="_blank">
+				<img src="assets/img/github.svg" alt="Github" class="github"/>
 			</a>
-			<a href="">
-				<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
+			<a href="https://www.instagram.com/lucas.kardashiann/" target="_blank">
+				<img src="assets/img/instagram.svg" alt="Instagram" class="instagram"/>
 			</a>
 
 		</section>
 
 		<h3>Feito com 🧡 por Lucas Daniel Souza Dias - 2025</h3>
-
 	</footer>
-
+	<style>
+		.home{
+			border-bottom: 2px rgb(227, 227, 227) solid;
+			pointer-events: none;
+		}
+	</style>
 </body>
 
 </html>

@@ -35,10 +35,10 @@
 					<!-- Marcadores não ordenados + links -->
 					<ul id="menu">
 						<li>
-							<a href="index.html">Home</a>
+							<a class="home" href="index.html">Home</a>
 						</li>
 						<li>
-							<a href="contato.html">Contato</a>
+							<a class="contato" href="contato.html">Contato</a>
 						</li>
 					</ul>
 
@@ -55,11 +55,11 @@
 
 		<!-- Seção Formulário de Contato e Redes Sociais -->
 		<section id="contact" class="flex">
-
+			
 			<!-- Seção do Formulário-->
-			<form action="#" method="submit">
+			<form action="#" method="submit" id="formulario">
 				<label for="nome">Nome: </label>
-				<input id="nome" type="text" name="name" placeholder="Digite seu nome" required />
+				<input id="nome" type="text" name="nome" placeholder="Digite seu nome" required />
 				<span id="txtNome"></span>
 
 				<label for="email">Email: </label>
@@ -74,14 +74,14 @@
 				<textarea id="message" name="message" placeholder="Digite sua mensagem" required>
 					</textarea>
 
-				<button type="submit">Enviar</button>
+				<button id="botao" type="submit">Enviar</button>
 			</form>
 
 			<!-- Seção do Google Maps -->
 			<article id="mapa" class="flex_start">
 
 				<div id="endereco">
-					<p>Rua Rio Parana, 262</p>
+					<p>Rua Rio Parana</p>
 					<p>Itaquaquecetuba - SP</p>
 				</div>
 
@@ -97,24 +97,32 @@
 	<!-- Rodapé da Página (footer) -->
 	<footer class="flex">
 
-		<!-- Seção de Contato - Redes Sociais-->
+			<!-- Seção de Contato - Redes Sociais-->
 		<section id="redes_sociais">
 
-			<a href="">
-				<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon" />
+			<a href="https://www.linkedin.com/in/lucas-daniel-souza-dias/" target="_blank">
+				<img src="assets/img/linkedin.svg" alt="LinkedIn" class="linkedin"/>
 			</a>
-			<a href="">
-				<img src="assets/img/github.svg" alt="Github" class="social_icon" />
+			<a href="https://github.com/Lucas300" target="_blank">
+				<img src="assets/img/github.svg" alt="Github" class="github"/>
 			</a>
-			<a href="">
-				<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon" />
+			<a href="https://www.instagram.com/lucas.kardashiann/" target="_blank">
+				<img src="assets/img/instagram.svg" alt="Instagram" class="instagram"/>
 			</a>
 
 		</section>
 
 		<h3>Feito com 🧡 por Lucas Daniel Souza Dias - 2025</h3>
-
+		
 	</footer>
+	<!-- Script JavaScript-->
+	<script src="./assets/js/script.js"></script>
+	<style>
+		.contato{
+			border-bottom: 2px rgb(227, 227, 227) solid;
+			pointer-events: none;
+		}
+	</style>
 </body>
 
 </html>
